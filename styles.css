@@ -6,7 +6,7 @@
   
 }
 html{
-  scroll-behavior: sm;
+  scroll-behavior: smooth;
 }
 .body{
   max-width: 100vw;
@@ -187,8 +187,10 @@ button:active{
 }
 
 .header_image_wrapper{
-  padding: 20px;
-  z-index: 1;
+  padding:40px;
+  z-index: 2;
+  max-height: 50vh;
+  height: 100%;
 }
 
 
@@ -205,6 +207,7 @@ button:active{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .no-cursor{
   cursor: not-allowed;
@@ -220,9 +223,9 @@ button:active{
   background:url(assets/wave.jpg);
   content: "";
   position: absolute;
-  width: 101vw;
-  height: 12vw;
-  left: 0;
+  width: 100vw;
+  height: 9vw;
+  /* left: 0; */
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,7 +234,7 @@ button:active{
 #highlights:before{
   
   transform: translateY(-100%);
-  top: 1px;
+  /* top: 1px; */
 
 
 }
@@ -255,7 +258,7 @@ button:active{
   display: flex;
   align-items: center;
   flex-direction: column;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .highlight_para{
   text-align: center;
@@ -328,7 +331,6 @@ button:active{
 .books_ratings{
   margin-bottom: 8px;
   color: #fabf2a;
-  background-color: #242424;
 
 }
 .book_price_normal{
